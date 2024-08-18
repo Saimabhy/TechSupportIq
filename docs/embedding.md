@@ -1,14 +1,14 @@
-# Embedding the Cognigy Webchat
+# Embedding the TechSupportIq Webchat
 
 ## Basic Implementation
 
 To integrate the Webchat into a Website, you need to
 
 1. load the `webchat.js` bundle via a `<script>` tag
-2. initialize the Webchat towards a Cognigy Endpoint using `initWebchat()`
+2. initialize the Webchat towards a TechSupportIq Endpoint using `initWebchat()`
 
 See it in action:  
-[![Edit Basic Implementation](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/basic-cognigy-webchat-embedding-ict1u?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Basic Implementation](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/basic-TechSupportIq-webchat-embedding-ict1u?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Using File Compression
 
@@ -35,13 +35,13 @@ For older browsers, we ship a seperate build of the Webchat called `webchat.lega
 | Safari            | `>= 9`  |
 
 See it in action:  
-[![Edit Using a Compatibility Build](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-cognigy-webchat-yu1yg?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Using a Compatibility Build](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-TechSupportIq-webchat-yu1yg?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Content-Security-Policy (CSP)
 
 When embedding Webchat within a website implementing a stricter
 security environment, the CSP should be extended
-to allow connections to the Cognigy AI Endpoint host.
+to allow connections to the TechSupportIq AI Endpoint host.
 (Note: Endpoint URL is the first parameter to the initWebchat function)
 
 webchat.js, plugins and webchat initialization code need to be allowed
@@ -52,11 +52,11 @@ to execute. Note: Webchat plugins can have their own CSP requirements.
 To make use of Webchat Plugins, you have to load them via `<script>` tags AFTER loading the `webchat.js` / `webchat.legacy.js` and BEFORE calling `initWebchat()`
 
 See it in action:  
-[![Edit Using Webchat Plugins](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-cognigy-webchat-1p6ky?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Using Webchat Plugins](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-TechSupportIq-webchat-1p6ky?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Client-Side Configuration
 
-You can pass [Webchat Options](#webchat-options) as an additional argument to the `initWebchat()` function which can customize the way the Webchat connects to Cognigy as well as override the Settings from your Endpoint.
+You can pass [Webchat Options](#webchat-options) as an additional argument to the `initWebchat()` function which can customize the way the Webchat connects to TechSupportIq as well as override the Settings from your Endpoint.
 
 ### Webchat Options
 
@@ -76,7 +76,7 @@ You can pass [Webchat Options](#webchat-options) as an additional argument to th
 <sup id="persistent-user-id">1</sup> The `userId` will be randomly generated on first page load and then persisted user via `LocalStorage`. When that user reloads the page, the Webchat will re-use the `userId` from `LocalStorage`.
 
 See it in action:  
-[![Edit Custom Webchat Options](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-cognigy-webchat-4xkv8?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Custom Webchat Options](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-TechSupportIq-webchat-4xkv8?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Endpoint Settings
 
@@ -88,8 +88,8 @@ See it in action:
 | colorScheme                         | string                              | #2C6CAF                            | x                             |                                       |                                 | The background color of the header and bot messages in the Webchat.                                                                                                                                             |
 | connectivity                        | [Connectivity](#connectivity)       | -                                  |                               |                                       |                                 | Enabling the connectivity handler will prevent the user from using the Webchat Widget if it's unable to load the endpoint configuration within a specified time frame                                           |
 | designTemplate                      | 1 or 2                              | 1                                  | x                             | x                                     |                                 | The Webchat design template to use. We default to design template 1 (bottom right with a button), you can switch to template 2, which is the centered webchat.                                                  |
-| disableBranding                     | boolean                             | false                              |                               |                                       |                                 | If true, hides "Powered by Cognigy" link                                                                                                                                                                        |
-| disableDefaultReplyCompatiblityMode | boolean                             | false                              |                               |                                       |                                 | If this is set to true, the webchat will not try to look for messenger content in `data._data._cognigy`. This can lead to issues with structured content in Intent Default Replies.                             |
+| disableBranding                     | boolean                             | false                              |                               |                                       |                                 | If true, hides "Powered by TechSupportIq" link                                                                                                                                                                        |
+| disableDefaultReplyCompatiblityMode | boolean                             | false                              |                               |                                       |                                 | If this is set to true, the webchat will not try to look for messenger content in `data._data._TechSupportIq`. This can lead to issues with structured content in Intent Default Replies.                             |
 | disableHtmlContentSanitization      | boolean                             | false                              | x                             |                                       |                                 | If true, will disable the removal of potentially malicious tags/attributes when rendering HTML content (applies to default message plugins!)                                                                    |
 | disableHtmlInput                    | boolean                             | false                              |                               |                                       |                                 | If true, strips all html tags out from the input of the user.                                                                                                                                                   |
 | disableInputAutocomplete            | boolean                             | false                              | x                             | x                                     |                                 | If true, disabled the autosuggestions from e.g. mobile touch keyboards.                                                                                                                                         |
@@ -128,7 +128,7 @@ See it in action:
 | inputCollationTimeout               | number                              | 1000                               |                               |                                       |                                 | Configures the amout of time after which collated messages are automatically being submit (if using the `enableInputCollation` option)                                                                          |
 | inputPlaceholder                    | string                              | "Write a reply"                    | x                             |                                       |                                 | The placeholder text to display in the input field.                                                                                                                                                             |
 | maintenance                         | [Maintenance](#maintenance)         | -                                  | x                             |                                       |                                 | Configures the maintenance mode to prevent the user from using the Webchat Widget during maintenance                                                                                                            |
-| messageLogoUrl                      | string                              | COGNIGY.AI Logo                    | x                             |                                       |                                 | A custom avatar that should be displayed next to bot messages. Defaults to a COGNIGY.AI logo.                                                                                                                   |
+| messageLogoUrl                      | string                              | TechSupportIq.AI Logo                    | x                             |                                       |                                 | A custom avatar that should be displayed next to bot messages. Defaults to a TechSupportIq.AI logo.                                                                                                                   |
 | persistentMenu                      | [Persistent Menu](#persistent-menu) | -                                  | x                             |                                       |                                 | The Persistent Menu to render in the Webchat.                                                                                                                                                                   |
 | ratingTitleText                     | string                              | "Please rate your chat experience" |                               |                                       |                                 | The title displayed in the rating dialog prompt.                                                                                                                                                                |
 | ratingCommentText                   | string                              | "Feel free to leave a comment."    |                               |                                       |                                 | The text displayed above the comment field in the rating dialog prompt.                                                                                                                                         |
@@ -136,7 +136,7 @@ See it in action:
 | ratingMessageHistoryCommentText     | string                              | "You commented:"                   |                               |                                       |                                 | The text displayed in the message history after giving a rating, if there was a comment sent (text is followed by the actual comment)                                                                           |
 | showEngagementMessagesInChat        | boolean                             | false                              |                               |                                       |                                 | If this is true, then engagement messages will also be shown in the chat window                                                                                                                                 |
 | startBehavior                       | 'none' , 'button', 'injection'      | 'none'                             | x                             |                                       |                                 | If 'none', will start the webchat with a text input, 'button' will display a get started button with a preconfigured message, 'injection' will automatically send a message to the bot.                         |
-| title                               | string                              | Cognigy Webchat                    | x                             |                                       |                                 | The text that will be shown in the title bar of the Webchat                                                                                                                                                     |
+| title                               | string                              | TechSupportIq Webchat                    | x                             |                                       |                                 | The text that will be shown in the title bar of the Webchat                                                                                                                                                     |
 | unreadMessageTitleText              | string                              | "New Message"                      | x                             |                                       |                                 | The website title that is displayed when the user retrieved one new message                                                                                                                                     |
 | unreadMessageTitleTextPlural        | string                              | "New Messages"                     | x                             |                                       |                                 | The website title that is displayed when the user retrieved more than one new message                                                                                                                           |
 | userAvatarUrl                       | string                              | undefined                          | x                             |                                       |                                 | A custom avatar that should be displayed next to user messages. Defaults to a user icon.                                                                                                                        |
@@ -160,7 +160,7 @@ The list of "safe to update" features will be expanded over time.
 These properties can be updated, but will only have effect if the "injection" message was not sent yet / the "button" was not clicked yet.
 
 See it in action:  
-[![Edit Override Endpoint Settings](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-cognigy-webchat-bpz1r?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Override Endpoint Settings](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/embedding-the-TechSupportIq-webchat-bpz1r?fontsize=14&hidenavigation=1&theme=dark)
 
 #### Persistent Menu
 

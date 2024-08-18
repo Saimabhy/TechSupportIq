@@ -23,7 +23,7 @@ describe('Chat Log', () => {
     });
 
     it('chat log wrapper contains branding', () => {
-        cy.get('.webchat-chat-history').get("#cognigyBrandingLink").should("exist");
+        cy.get('.webchat-chat-history').get("#TechSupportIqBrandingLink").should("exist");
     });
 
     it('parent has outline when chat log is focused', () => {

@@ -6,7 +6,7 @@ import { Omit } from "react-redux";
 import { setFullscreenMessage } from "../ui/ui-reducer";
 import { receiveMessage, ReceiveMessageAction } from "./message-handler";
 import { sanitizeHTML } from "../../helper/sanitize";
-import { SocketClient } from "@cognigy/socket-client";
+import { SocketClient } from "@TechSupportIq/socket-client";
 
 
 // a "person" icon
@@ -102,7 +102,7 @@ export const createMessageMiddleware = (client: SocketClient): Middleware<{}, St
             const avatarUrl = getAvatarForMessage(message, state);
 
             const isWebchatActive = state.ui.open && state.ui.isPageVisible;
-            const isMessageEmpty = !(message.text || message.data?._cognigy?._webchat);
+            const isMessageEmpty = !(message.text || message.data?._TechSupportIq?._webchat);
             const isUnseen = !isWebchatActive && !isMessageEmpty;
 
             next(addMessage({

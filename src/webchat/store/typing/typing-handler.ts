@@ -1,6 +1,6 @@
 import { Store } from "redux";
 import { setTyping } from "../ui/ui-reducer";
-import { SocketClient } from "@cognigy/socket-client";
+import { SocketClient } from "@TechSupportIq/socket-client";
 
 
 export const registerTypingHandler = (store: Store, client: SocketClient) => {

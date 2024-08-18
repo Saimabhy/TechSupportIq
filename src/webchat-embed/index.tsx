@@ -32,7 +32,7 @@ const initWebchat = async (webchatConfigUrl: string, options?: InitWebchatOption
     });
 
     // @ts-ignore
-    const inputPlugins = (window.cognigyWebchatInputPlugins || [])
+    const inputPlugins = (window.TechSupportIqWebchatInputPlugins || [])
         .map(plugin => typeof plugin === 'function'
             ? plugin({ React, styled })
             : plugin
@@ -69,12 +69,12 @@ const initWebchat = async (webchatConfigUrl: string, options?: InitWebchatOption
     const webchatRoot = document.createElement('div');
     document.body.appendChild(webchatRoot);
 
-    let cognigyWebchat: Webchat | null = null;
+    let TechSupportIqWebchat: Webchat | null = null;
 
     ReactDOM.render(
         (
             <Webchat
-                ref={ref => cognigyWebchat = ref}
+                ref={ref => TechSupportIqWebchat = ref}
                 url={webchatConfigUrl}
                 options={options}
                 settings={settings}
@@ -86,20 +86,20 @@ const initWebchat = async (webchatConfigUrl: string, options?: InitWebchatOption
     );
 
     // the ref call might not be executed synchronously
-    while (!cognigyWebchat) {
+    while (!TechSupportIqWebchat) {
         await new Promise(resolve => setTimeout(resolve, 500));
     }
     if (callback) {
-        return callback(cognigyWebchat)
+        return callback(TechSupportIqWebchat)
     }
 
-    return cognigyWebchat;
+    return TechSupportIqWebchat;
 };
 
 // @ts-ignore
 window.initWebchat = initWebchat;
 
 // @ts-ignore
-window.__COGNIGY_WEBCHAT = {
+window.__WEBCHAT = {
     React
 };

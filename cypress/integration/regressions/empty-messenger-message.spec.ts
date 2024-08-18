@@ -3,7 +3,7 @@ describe("Empty Messenger Message", () => {
         cy.visitWebchat().initMockWebchat().openWebchat();
 
         cy.receiveMessage("", {
-            _cognigy: {
+            _TechSupportIq: {
                 _webchat: {}
             }
         });

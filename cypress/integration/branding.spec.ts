@@ -4,7 +4,7 @@ describe("Branding", () => {
             .initMockWebchat()
             .openWebchat();
 
-        cy.get('[aria-label^="Powered by Cognigy"]').should("be.visible");
+        cy.get('[aria-label^="Powered by TechSupportIq"]').should("be.visible");
     });
 
     it("banner shouldn't be rendered if disabled by disableBranding", () => {
@@ -16,7 +16,7 @@ describe("Branding", () => {
             })
             .openWebchat();
 
-        cy.get('[aria-label^="Powered by Cognigy"]').should("not.exist");
+        cy.get('[aria-label^="Powered by TechSupportIq"]').should("not.exist");
     });
 
     it("banner is visible at the end of a long chat history", () => {
@@ -30,7 +30,7 @@ describe("Branding", () => {
             }
         });
 
-        cy.get('[aria-label^="Powered by Cognigy"]').should("be.visible");
+        cy.get('[aria-label^="Powered by TechSupportIq"]').should("be.visible");
     });
 
     it("banner is not visible when scrolling up the message history", () => {
@@ -45,16 +45,16 @@ describe("Branding", () => {
         });
 
         cy.contains("Message 1!").scrollIntoView();
-        cy.get('[aria-label^="Powered by Cognigy"]').should("not.be.visible");
+        cy.get('[aria-label^="Powered by TechSupportIq"]').should("not.be.visible");
     });
 
     it('banner is accessible', () => {
         cy.visitWebchat().initMockWebchat().openWebchat();
-        cy.get('#cognigyBrandingLink').should("have.attr", "aria-label", "Powered by Cognigy. Opens in new tab")
+        cy.get('#TechSupportIqBrandingLink').should("have.attr", "aria-label", "Powered by TechSupportIq. Opens in new tab")
     })
 
     it('banner is hidden from screen reader', () => {
         cy.visitWebchat().initMockWebchat().openWebchat();
-        cy.get('#cognigyBrandingLogo').should("have.attr", "aria-hidden", "true")
+        cy.get('#TechSupportIqBrandingLogo').should("have.attr", "aria-hidden", "true")
     })
 });

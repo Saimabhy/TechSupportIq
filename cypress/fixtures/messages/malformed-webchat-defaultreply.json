@@ -1,7 +1,7 @@
 {
   "text": null,
   "data": {
-    "_cognigy": {
+    "_TechSupportIq": {
       "_webchat": {
         "_pointer": "quick-replies",
         "quick-replies": {
@@ -19,7 +19,7 @@
       }
     },
     "_data": {
-      "_cognigy": {
+      "_TechSupportIq": {
         "_webchat": {
           "message": {
             "text": "some quick reply message",

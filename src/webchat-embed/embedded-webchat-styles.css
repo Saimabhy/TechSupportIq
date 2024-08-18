@@ -1,9 +1,9 @@
-[data-cognigy-webchat-root] {
+[data-webchat-root] {
     position: relative;
     z-index: 9999;
 }
 
-[data-cognigy-webchat-root] [data-cognigy-webchat] {
+[data-webchat-root] [data-TechSupportIq-webchat] {
     position: fixed;
 
     left: 0;
@@ -15,7 +15,7 @@
     z-index: 2;
 }
 
-[data-cognigy-webchat-root] button[data-cognigy-webchat-toggle] {
+[data-webchat-root] button[data-TechSupportIq-webchat-toggle] {
     position: fixed;
 
     right: 32px;
@@ -25,13 +25,13 @@
     z-index: 1;
 }
 
-[data-cognigy-webchat-root] button[data-cognigy-webchat-toggle]:focus {
+[data-webchat-root] button[data-TechSupportIq-webchat-toggle]:focus {
 	outline: none;
 	box-shadow: 0 0 4px 3px rgb(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 576px) {
-    [data-cognigy-webchat-root] {
+    [data-webchat-root] {
         position: relative;
 
         left: auto;
@@ -42,7 +42,7 @@
         height: 100%;
     }
 
-    [data-cognigy-webchat-root] [data-cognigy-webchat] {
+    [data-webchat-root] [data-TechSupportIq-webchat] {
         left: auto;
         top: auto;
 
@@ -58,7 +58,7 @@
 }
 
 @media screen and (min-width: 576px) and (max-height: 684px) {
-    [data-cognigy-webchat-root] [data-cognigy-webchat] {
+    [data-webchat-root] [data-TechSupportIq-webchat] {
         height: calc(100% - 104px);
     }
 }

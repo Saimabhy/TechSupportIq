@@ -3,7 +3,7 @@ import { IMessage } from "../../../common/interfaces/message";
 import { ISendMessageOptions } from "./message-middleware";
 import { setBotAvatarOverrideUrl, setUserAvatarOverrideUrl, setAgentAvatarOverrideUrl, setTyping } from "../ui/ui-reducer";
 import { setCustomRatingCommentText, setCustomRatingTitle, showRatingDialog } from "../rating/rating-reducer";
-import { SocketClient } from "@cognigy/socket-client";
+import { SocketClient } from "@TechSupportIq/socket-client";
 
 const RECEIVE_MESSAGE = 'RECEIVE_MESSAGE';
 export const receiveMessage = (message: IMessage, options: Partial<ISendMessageOptions> = {}) => ({

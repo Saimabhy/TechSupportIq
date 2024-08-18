@@ -24,14 +24,14 @@ export const createMessagePlugin: MessagePluginCreator = (match, component, opti
 export const registerMessagePlugin = (plugin: MessagePlugin | MessagePluginFactory) => {
     if (window) {
         // @ts-ignore
-        window.cognigyWebchatMessagePlugins = [...(window.cognigyWebchatMessagePlugins || []), plugin];
-        console.log('added cognigy message plugin');
+        window.TechSupportIqWebchatMessagePlugins = [...(window.TechSupportIqWebchatMessagePlugins || []), plugin];
+        console.log('added TechSupportIq message plugin');
     }
 }
 
 export const getRegisteredMessagePlugins = (): (MessagePlugin | MessagePluginFactory)[] => 
     // @ts-ignore
-    [...(window.cognigyWebchatMessagePlugins || [])].reverse();
+    [...(window.TechSupportIqWebchatMessagePlugins || [])].reverse();
 
 export const prepareMessagePlugins = (messagePlugins = getRegisteredMessagePlugins(), {
     React,
@@ -63,8 +63,8 @@ export const prepareMessagePlugins = (messagePlugins = getRegisteredMessagePlugi
 export const registerInputPlugin = (plugin: InputPlugin | InputPluginFactory) => {
     if (window) {
         // @ts-ignore
-        window.cognigyWebchatInputPlugins = [...(window.cognigyWebchatInputPlugins || []), plugin];
-        console.log('added cognigy input plugin');
+        window.TechSupportIqWebchatInputPlugins = [...(window.TechSupportIqWebchatInputPlugins || []), plugin];
+        console.log('added TechSupportIq input plugin');
     }
 }
 

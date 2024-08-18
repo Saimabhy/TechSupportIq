@@ -1,8 +1,8 @@
 # Documentation
-This page contains an index of guides on how to integrate and make use of the Cognigy Webchat
+This page contains an index of guides on how to integrate and make use of the TechSupportIq Webchat
 
 ## [Embedding](./embedding.md)
-Learn how to embed the Cognigy Webchat into your Website
+Learn how to embed the TechSupportIq Webchat into your Website
 
 ## [Webchat API](./webchat-api.md)
 Use the Webchat API to create tightly coupled integrations

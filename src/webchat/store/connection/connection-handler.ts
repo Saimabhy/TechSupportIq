@@ -1,6 +1,6 @@
 import { Store } from "redux";
 import { setConnected, setReconnectionLimit } from "./connection-reducer";
-import { SocketClient } from "@cognigy/socket-client";
+import { SocketClient } from "@TechSupportIq/socket-client";
 import { announceNetworkOn } from "./connection-middleware";
 import { onNetworkOn } from "../../helper/connection-watchdog";
 

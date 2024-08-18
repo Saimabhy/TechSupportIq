@@ -7,6 +7,6 @@ import "../plugins/attachments";
 window.MessageRenderer = MessageRenderer;
 
 // @ts-ignore
-window.__COGNIGY_WEBCHAT = {
+window.__WEBCHAT = {
   React,
 };

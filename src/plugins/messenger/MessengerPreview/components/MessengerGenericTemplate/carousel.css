@@ -10,7 +10,7 @@
 	COLOURS
 ********************************************/
 
-[data-cognigy-webchat-root] .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+[data-webchat-root] .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
   -ms-transition: all 0.25s ease-in;
@@ -27,12 +27,12 @@
   cursor: pointer;
 }
 
-[data-cognigy-webchat-root] .carousel .control-arrow:hover {
+[data-webchat-root] .carousel .control-arrow:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-[data-cognigy-webchat-root] .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+[data-webchat-root] .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
   margin: 0 5px;
   display: inline-block;
   border-top: 8px solid transparent;
@@ -40,51 +40,51 @@
   content: '';
 }
 
-[data-cognigy-webchat-root] .carousel .control-disabled.control-arrow {
+[data-webchat-root] .carousel .control-disabled.control-arrow {
   opacity: 0;
   filter: alpha(opacity=0);
   cursor: inherit;
   display: none;
 }
 
-[data-cognigy-webchat-root] .carousel .control-prev.control-arrow {
+[data-webchat-root] .carousel .control-prev.control-arrow {
   left: 0;
 }
 
-[data-cognigy-webchat-root] .carousel .control-prev.control-arrow:before {
+[data-webchat-root] .carousel .control-prev.control-arrow:before {
   border-right: 8px solid #fff;
 }
 
-[data-cognigy-webchat-root] .carousel .control-next.control-arrow {
+[data-webchat-root] .carousel .control-next.control-arrow {
   right: 0;
 }
 
-[data-cognigy-webchat-root] .carousel .control-next.control-arrow:before {
+[data-webchat-root] .carousel .control-next.control-arrow:before {
   border-left: 8px solid #fff;
 }
 
-[data-cognigy-webchat-root] .carousel {
+[data-webchat-root] .carousel {
   position: relative;
   width: 100%;
 }
 
-[data-cognigy-webchat-root] .carousel * {
+[data-webchat-root] .carousel * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-[data-cognigy-webchat-root] .carousel img {
+[data-webchat-root] .carousel img {
   width: 100%;
   display: inline-block;
   pointer-events: none;
 }
 
-[data-cognigy-webchat-root] .carousel .carousel {
+[data-webchat-root] .carousel .carousel {
   position: relative;
 }
 
-[data-cognigy-webchat-root] .carousel .control-arrow {
+[data-webchat-root] .carousel .control-arrow {
   outline: 0;
   border: 0;
   background: none;
@@ -93,12 +93,12 @@
   font-size: 18px;
 }
 
-[data-cognigy-webchat-root] .carousel .thumbs-wrapper {
+[data-webchat-root] .carousel .thumbs-wrapper {
   margin: 20px;
   overflow: hidden;
 }
 
-[data-cognigy-webchat-root] .carousel .thumbs {
+[data-webchat-root] .carousel .thumbs {
   -webkit-transition: all 0.15s ease-in;
   -moz-transition: all 0.15s ease-in;
   -ms-transition: all 0.15s ease-in;
@@ -114,7 +114,7 @@
   white-space: nowrap;
 }
 
-[data-cognigy-webchat-root] .carousel .thumb {
+[data-webchat-root] .carousel .thumb {
   -webkit-transition: border 0.15s ease-in;
   -moz-transition: border 0.15s ease-in;
   -ms-transition: border 0.15s ease-in;
@@ -129,26 +129,26 @@
   padding: 2px;
 }
 
-[data-cognigy-webchat-root] .carousel .thumb:focus {
+[data-webchat-root] .carousel .thumb:focus {
   border: 3px solid #ccc;
   outline: none;
 }
 
-[data-cognigy-webchat-root] .carousel .thumb.selected, .carousel .thumb:hover {
+[data-webchat-root] .carousel .thumb.selected, .carousel .thumb:hover {
   border: 3px solid #333;
 }
 
-[data-cognigy-webchat-root] .carousel .thumb img {
+[data-webchat-root] .carousel .thumb img {
   vertical-align: top;
 }
 
-[data-cognigy-webchat-root] .carousel.carousel-slider {
+[data-webchat-root] .carousel.carousel-slider {
   position: relative;
   margin: 0;
   overflow: hidden;
 }
 
-[data-cognigy-webchat-root] .carousel.carousel-slider .control-arrow {
+[data-webchat-root] .carousel.carousel-slider .control-arrow {
   top: 0;
   color: #fff;
   font-size: 26px;
@@ -157,11 +157,11 @@
   padding: 5px;
 }
 
-[data-cognigy-webchat-root] .carousel.carousel-slider .control-arrow:hover, [data-cognigy-webchat-root] .carousel.carousel-slider .control-arrow:focus {
+[data-webchat-root] .carousel.carousel-slider .control-arrow:hover, [data-webchat-root] .carousel.carousel-slider .control-arrow:focus {
   background: rgba(0, 0, 0, 0.2);
 }
 
-[data-cognigy-webchat-root] .carousel .slider-wrapper {
+[data-webchat-root] .carousel .slider-wrapper {
   overflow: hidden;
   margin: auto;
   width: 100%;
@@ -172,7 +172,7 @@
   transition: height 0.15s ease-in;
 }
 
-[data-cognigy-webchat-root] .carousel .slider-wrapper.axis-horizontal .slider {
+[data-webchat-root] .carousel .slider-wrapper.axis-horizontal .slider {
   -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
@@ -182,12 +182,12 @@
   display: flex;
 }
 
-[data-cognigy-webchat-root] .carousel .slider-wrapper.axis-horizontal .slider .slide {
+[data-webchat-root] .carousel .slider-wrapper.axis-horizontal .slider .slide {
   flex-direction: column;
   flex-flow: column;
 }
 
-[data-cognigy-webchat-root] .carousel .slider-wrapper.axis-vertical {
+[data-webchat-root] .carousel .slider-wrapper.axis-vertical {
   -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
@@ -197,12 +197,12 @@
   display: flex;
 }
 
-[data-cognigy-webchat-root] .carousel .slider-wrapper.axis-vertical .slider {
+[data-webchat-root] .carousel .slider-wrapper.axis-vertical .slider {
   -webkit-flex-direction: column;
   flex-direction: column;
 }
 
-[data-cognigy-webchat-root] .carousel .slider {
+[data-webchat-root] .carousel .slider {
   margin: 0;
   padding: 0;
   position: relative;
@@ -210,7 +210,7 @@
   width: 100%;
 }
 
-[data-cognigy-webchat-root] .carousel .slider.animated {
+[data-webchat-root] .carousel .slider.animated {
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -ms-transition: all 0.35s ease-in-out;
@@ -218,7 +218,7 @@
   transition: all 0.35s ease-in-out;
 }
 
-[data-cognigy-webchat-root] .carousel .slide {
+[data-webchat-root] .carousel .slide {
   min-width: 100%;
   margin: 0;
   position: relative;
@@ -226,20 +226,20 @@
   /* background: #000; */
 }
 
-[data-cognigy-webchat-root] .carousel .slide img {
+[data-webchat-root] .carousel .slide img {
   width: 100%;
   vertical-align: top;
   border: 0;
 }
 
-[data-cognigy-webchat-root] .carousel .slide iframe {
+[data-webchat-root] .carousel .slide iframe {
   display: inline-block;
   width: calc(100% - 80px);
   margin: 0 40px 40px;
   border: 0;
 }
 
-[data-cognigy-webchat-root] .carousel .slide .legend {
+[data-webchat-root] .carousel .slide .legend {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -264,7 +264,7 @@
   transition: opacity 0.35s ease-in-out;
 }
 
-[data-cognigy-webchat-root] .carousel .control-dots {
+[data-webchat-root] .carousel .control-dots {
   position: absolute;
   bottom: 0;
   margin: 10px 0;
@@ -278,7 +278,7 @@
   }
 }
 
-[data-cognigy-webchat-root] .carousel .control-dots .dot {
+[data-webchat-root] .carousel .control-dots .dot {
   -webkit-transition: opacity 0.25s ease-in;
   -moz-transition: opacity 0.25s ease-in;
   -ms-transition: opacity 0.25s ease-in;
@@ -296,12 +296,12 @@
   margin: 0 8px;
 }
 
-[data-cognigy-webchat-root] .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+[data-webchat-root] .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-[data-cognigy-webchat-root] .carousel .carousel-status {
+[data-webchat-root] .carousel .carousel-status {
   position: absolute;
   top: 0;
   right: 0;
@@ -311,6 +311,6 @@
   color: #fff;
 }
 
-[data-cognigy-webchat-root] .carousel:hover .slide .legend {
+[data-webchat-root] .carousel:hover .slide .legend {
   opacity: 1;
 }

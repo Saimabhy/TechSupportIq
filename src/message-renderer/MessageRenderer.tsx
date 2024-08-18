@@ -37,7 +37,7 @@ const MessageRenderer: FC<IMessageRendererProps> = (props) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div data-cognigy-webchat-root>
+      <div data-webchat-root>
         <MessagePluginRenderer
           config={actualConfig}
           message={message}

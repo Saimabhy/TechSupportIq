@@ -7,7 +7,7 @@ describe("Rating", () => {
         cy.initMockWebchat();
         cy.openWebchat();
 
-        cy.contains("Cognigy Webchat").should("be.visible");
+        cy.contains("TechSupportIq Webchat").should("be.visible");
         cy.get('[aria-label="Rate your chat"]').should('not.exist');
     });
 
@@ -57,7 +57,7 @@ describe("Rating", () => {
 
         cy.getMessageFromHistory({
             data: {
-                _cognigy: {
+                _TechSupportIq: {
                     controlCommands: [
                         {
                             type: "setRating",
@@ -96,7 +96,7 @@ describe("Rating", () => {
 
         cy.getMessageFromHistory({
             data: {
-                _cognigy: {
+                _TechSupportIq: {
                     controlCommands: [
                         {
                             type: "setRating",
@@ -152,7 +152,7 @@ describe("Rating", () => {
 
         cy.getMessageFromHistory({
             data: {
-                _cognigy: {
+                _TechSupportIq: {
                     controlCommands: [
                         {
                             type: "setRating",
@@ -194,7 +194,7 @@ describe("Rating", () => {
 
         cy.getMessageFromHistory({
             data: {
-                _cognigy: {
+                _TechSupportIq: {
                     controlCommands: [
                         {
                             type: "setRating",

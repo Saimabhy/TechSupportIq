@@ -60,12 +60,12 @@ const getGradient = (color: string) => {
     return gradient;
 }
 
-const cognigyBlue = '#3f51b5';
+const TechSupportIqBlue = '#3f51b5';
 
 
 export const createWebchatTheme = (theme: Partial<IWebchatTheme> = {}): IWebchatTheme => {
     if (!theme.primaryColor)
-        theme.primaryColor = cognigyBlue;
+        theme.primaryColor = TechSupportIqBlue;
 
     if (!theme.primaryWeakColor)
         theme.primaryWeakColor = weak(theme.primaryColor);

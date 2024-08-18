@@ -27,7 +27,7 @@ const renderMessageWithParams = (params: IGenerateTestCaseParams) => {
     });
 
     const messageData = {
-        _cognigy: {
+        _TechSupportIq: {
             _defaultPreview: params.defaultPreviewTabConfigured ? getDummyMessage('RENDER DEFAULTPREVIEW') : null,
             _webchat: params.webchatTabConfigured ? getDummyMessage('RENDER WEBCHAT') : null,
             _facebook: params.facebookTabConfigured ? getDummyMessage("RENDER FACEBOOK") : null,
@@ -198,7 +198,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("DEFAULT TEXT", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             message: {
                                 text: "WEBCHAT QUICK REPLIES"
@@ -218,7 +218,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _defaultPreview: {
                             message: {
                                 text: "DEFAULT QUICK REPLIES"
@@ -243,7 +243,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _defaultPreview: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -277,7 +277,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _defaultPreview: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -311,7 +311,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("DEFAULT TEXT", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             message: {
                                 text: "WEBCHAT QUICK REPLIES"
@@ -331,7 +331,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -374,7 +374,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -408,7 +408,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -442,7 +442,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             message: {
                                 text: "WEBCHAT QUICK REPLIES"
@@ -467,7 +467,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("DEFAULT TEXT", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -495,7 +495,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("DEFAULT TEXT", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",
@@ -524,7 +524,7 @@ describe("Channel Rendering Priorities", {
                 cy.visitMessageRenderer();
 
                 cy.renderMessage("", {
-                    _cognigy: {
+                    _TechSupportIq: {
                         _webchat: {
                             adaptiveCard: {
                                 type: "AdaptiveCard",

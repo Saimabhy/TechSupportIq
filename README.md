@@ -1,6 +1,6 @@
 ## DEPRECATION WARNING FOR WEBCHAT v2
 
-With the release of our [Webchat v3](https://github.com/Cognigy/Webchat), we are also announcing the deprecation of older versions of Webchat (v2.X).
+With the release of our [Webchat v3](https://github.com/TechSupportIq/Webchat), we are also announcing the deprecation of older versions of Webchat (v2.X).
 
 **End of Support: 31st January 2026**
 
@@ -11,21 +11,21 @@ Effective immediately, there will be
 - Limited Support: Customer support for the deprecated versions will be significantly reduced and eventually unavailable after the end of support date.
 - Security Fixes: We will continue to provide security fixes until the end of the support date. 
 
-Please follow our [guide to migrate from Webchat v2 to v3](https://docs.cognigy.com/webchat/migration/).
+Please follow our [guide to migrate from Webchat v2 to v3](https://docs.TechSupportIq.com/webchat/migration/).
 
-# Cognigy Webchat Widget
+# TechSupportIq Webchat Widget
 
-This repository contains a Webchat feature that seamlessly integrates with your website, enabling your users to chat with your Conversational AI, built with Cognigy.
+This repository contains a Webchat feature that seamlessly integrates with your website, enabling your users to chat with your Conversational AI, built with TechSupportIq.
 
 ## Documentation
 
-To get started using the Webchat on your website, you can refer to the [Documentation section](./docs/README.md) in this repository. For information on how to set up the Webchat on the Cognigy side, please consult the [Deploy a Webchat Endpoint](https://docs.cognigy.com/ai/endpoints/webchat/deploy-webchat-endpoint/) guide in our product documentation.
+To get started using the Webchat on your website, you can refer to the [Documentation section](./docs/README.md) in this repository. For information on how to set up the Webchat on the TechSupportIq side, please consult the [Deploy a Webchat Endpoint](https://docs.TechSupportIq.com/ai/endpoints/webchat/deploy-webchat-endpoint/) guide in our product documentation.
 
-Read the documentation [here](https://docs.cognigy.com/ai/endpoints/webchat/webchat/) for information about integrating this Webchat on your own website. For styling customization, refer to the [guide on applying custom CSS to the Webchat](./src/webchat-ui/README.md).
+Read the documentation [here](https://docs.TechSupportIq.com/ai/endpoints/webchat/webchat/) for information about integrating this Webchat on your own website. For styling customization, refer to the [guide on applying custom CSS to the Webchat](./src/webchat-ui/README.md).
 
 ## About this Repository
 
-This repository contains the source code for the Cognigy Webchat within our product. It is divided into multiple sub-projects:
+This repository contains the source code for the TechSupportIq Webchat within our product. It is divided into multiple sub-projects:
 
 - `webchat-ui`: contains the source code used to render the webchat and webchat-plugins via `react`.
 - `webchat`: makes use of `webchat-ui` and adds the socket connection as well as state management to it. It can be used within React applications for seamless integration.

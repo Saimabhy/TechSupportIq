@@ -1,4 +1,4 @@
- [data-cognigy-webchat-root] .flatpickr-calendar {
+ [data-webchat-root] .flatpickr-calendar {
      /* opacity: 0;
      display: none;
      text-align: center;
@@ -23,13 +23,13 @@
      left: 22px; */
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.open, [data-cognigy-webchat-root] .flatpickr-calendar.inline {
+ [data-webchat-root] .flatpickr-calendar.open, [data-webchat-root] .flatpickr-calendar.inline {
      opacity: 1;
      /* max-height: 640px; */
      visibility: visible;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.open {
+ [data-webchat-root] .flatpickr-calendar.open {
      display: inline-block;
      z-index: 99999;
  }
@@ -39,53 +39,53 @@
      animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);
  } */
 
- [data-cognigy-webchat-root] .flatpickr-calendar.inline {
+ [data-webchat-root] .flatpickr-calendar.inline {
      display: block;
      position: relative;
      padding: 8px 16px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.static {
+ [data-webchat-root] .flatpickr-calendar.static {
      position: absolute;
      top: calc(100% + 2px);
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.static.open {
+ [data-webchat-root] .flatpickr-calendar.static.open {
      z-index: 999;
      display: block;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
+ [data-webchat-root] .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
      -webkit-box-shadow: none !important;
      box-shadow: none !important;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {
+ [data-webchat-root] .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {
      -webkit-box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
      box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar .hasWeeks .dayContainer, [data-cognigy-webchat-root] .flatpickr-calendar .hasTime .dayContainer {
+ [data-webchat-root] .flatpickr-calendar .hasWeeks .dayContainer, [data-webchat-root] .flatpickr-calendar .hasTime .dayContainer {
      border-bottom: 0;
      border-bottom-right-radius: 0;
      border-bottom-left-radius: 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar .hasWeeks .dayContainer {
+ [data-webchat-root] .flatpickr-calendar .hasWeeks .dayContainer {
      border-left: 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
+ [data-webchat-root] .flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
      height: 40px;
      border-top: 1px solid #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.noCalendar.hasTime .flatpickr-time {
+ [data-webchat-root] .flatpickr-calendar.noCalendar.hasTime .flatpickr-time {
      height: auto;
  }
 
  /* .flatpickr-calendar:before, 
-[data-cognigy-webchat-root] .flatpickr-calendar:after {
+[data-webchat-root] .flatpickr-calendar:after {
      position: absolute;
      display: block;
      pointer-events: none;
@@ -96,62 +96,62 @@
      left: 22px;
  } */
 
- [data-cognigy-webchat-root] .flatpickr-calendar.rightMost:before, [data-cognigy-webchat-root] .flatpickr-calendar.rightMost:after {
+ [data-webchat-root] .flatpickr-calendar.rightMost:before, [data-webchat-root] .flatpickr-calendar.rightMost:after {
      left: auto;
      right: 22px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar:before {
+ [data-webchat-root] .flatpickr-calendar:before {
      border-width: 5px;
      margin: 0 -5px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar:after {
+ [data-webchat-root] .flatpickr-calendar:after {
      border-width: 4px;
      margin: 0 -4px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowTop:before, [data-cognigy-webchat-root] .flatpickr-calendar.arrowTop:after {
+ [data-webchat-root] .flatpickr-calendar.arrowTop:before, [data-webchat-root] .flatpickr-calendar.arrowTop:after {
      bottom: 100%;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowTop:before {
+ [data-webchat-root] .flatpickr-calendar.arrowTop:before {
      border-bottom-color: #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowTop:after {
+ [data-webchat-root] .flatpickr-calendar.arrowTop:after {
      border-bottom-color: #fff;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowBottom:before, [data-cognigy-webchat-root] .flatpickr-calendar.arrowBottom:after {
+ [data-webchat-root] .flatpickr-calendar.arrowBottom:before, [data-webchat-root] .flatpickr-calendar.arrowBottom:after {
      top: 100%;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowBottom:before {
+ [data-webchat-root] .flatpickr-calendar.arrowBottom:before {
      border-top-color: #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar.arrowBottom:after {
+ [data-webchat-root] .flatpickr-calendar.arrowBottom:after {
      border-top-color: #fff;
  }
 
- [data-cognigy-webchat-root] .flatpickr-calendar:focus {
+ [data-webchat-root] .flatpickr-calendar:focus {
     outline: 0;
     box-shadow: inset 0px 0px 0 1px #959ea9;
  }
 
- [data-cognigy-webchat-root] .flatpickr-wrapper {
+ [data-webchat-root] .flatpickr-wrapper {
      width: 100%;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months {
+ [data-webchat-root] .flatpickr-months {
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
      display: flex;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-month {
+ [data-webchat-root] .flatpickr-months .flatpickr-month {
      margin-bottom: 10%;
      background: transparent;
      color: rgba(0, 0, 0, 0.9);
@@ -171,7 +171,7 @@
      flex: 1;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month, [data-webchat-root] .flatpickr-months .flatpickr-next-month {
      text-decoration: none;
      cursor: pointer;
      position: absolute;
@@ -185,15 +185,15 @@
      fill: rgba(0, 0, 0, 0.9);
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month.disabled, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month.disabled {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month.disabled, [data-webchat-root] .flatpickr-months .flatpickr-next-month.disabled {
      display: none;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month i, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month i {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month i, [data-webchat-root] .flatpickr-months .flatpickr-next-month i {
      position: relative;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month, [data-webchat-root] .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
      /*
         /*rtl:begin:ignore*/
      /*
@@ -211,7 +211,7 @@
  /*
         /*rtl:end:ignore*/
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month.flatpickr-next-month, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month.flatpickr-next-month, [data-webchat-root] .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
      /*
         /*rtl:begin:ignore*/
      /*
@@ -229,48 +229,48 @@
  /*
         /*rtl:end:ignore*/
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month:hover, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month:hover {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month:hover, [data-webchat-root] .flatpickr-months .flatpickr-next-month:hover {
      color: #959ea9;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month:hover svg, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month:hover svg {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month:hover svg, [data-webchat-root] .flatpickr-months .flatpickr-next-month:hover svg {
      fill: #f64747;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month svg, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month svg {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month svg, [data-webchat-root] .flatpickr-months .flatpickr-next-month svg {
      width: 14px;
      height: 14px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-months .flatpickr-prev-month svg path, [data-cognigy-webchat-root] .flatpickr-months .flatpickr-next-month svg path {
+ [data-webchat-root] .flatpickr-months .flatpickr-prev-month svg path, [data-webchat-root] .flatpickr-months .flatpickr-next-month svg path {
      -webkit-transition: fill 0.1s;
      transition: fill 0.1s;
      fill: inherit;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper {
+ [data-webchat-root] .numInputWrapper {
      position: relative;
      height: auto;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper input, [data-cognigy-webchat-root] .numInputWrapper span {
+ [data-webchat-root] .numInputWrapper input, [data-webchat-root] .numInputWrapper span {
      display: inline-block;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper input {
+ [data-webchat-root] .numInputWrapper input {
      width: 100%;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper input::-ms-clear {
+ [data-webchat-root] .numInputWrapper input::-ms-clear {
      display: none;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper input::-webkit-outer-spin-button, [data-cognigy-webchat-root] .numInputWrapper input::-webkit-inner-spin-button {
+ [data-webchat-root] .numInputWrapper input::-webkit-outer-spin-button, [data-webchat-root] .numInputWrapper input::-webkit-inner-spin-button {
      margin: 0;
      -webkit-appearance: none;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span {
+ [data-webchat-root] .numInputWrapper span {
      position: absolute;
      right: 0;
      width: 14px;
@@ -284,61 +284,61 @@
      box-sizing: border-box;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span:hover {
+ [data-webchat-root] .numInputWrapper span:hover {
      background: rgba(0, 0, 0, 0.1);
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span:active {
+ [data-webchat-root] .numInputWrapper span:active {
      background: rgba(0, 0, 0, 0.2);
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span:after {
+ [data-webchat-root] .numInputWrapper span:after {
      display: block;
      content: "";
      position: absolute;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span.arrowUp {
+ [data-webchat-root] .numInputWrapper span.arrowUp {
      top: 0;
      border-bottom: 0;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span.arrowUp:after {
+ [data-webchat-root] .numInputWrapper span.arrowUp:after {
      border-left: 4px solid transparent;
      border-right: 4px solid transparent;
      border-bottom: 4px solid rgba(57, 57, 57, 0.6);
      top: 26%;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span.arrowDown {
+ [data-webchat-root] .numInputWrapper span.arrowDown {
      top: 50%;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span.arrowDown:after {
+ [data-webchat-root] .numInputWrapper span.arrowDown:after {
      border-left: 4px solid transparent;
      border-right: 4px solid transparent;
      border-top: 4px solid rgba(57, 57, 57, 0.6);
      top: 40%;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span svg {
+ [data-webchat-root] .numInputWrapper span svg {
      width: inherit;
      height: auto;
  }
 
- [data-cognigy-webchat-root] .numInputWrapper span svg path {
+ [data-webchat-root] .numInputWrapper span svg path {
      fill: rgba(0, 0, 0, 0.5);
  }
 
- [data-cognigy-webchat-root] .numInputWrapper:hover {
+ [data-webchat-root] .numInputWrapper:hover {
      background: rgba(0, 0, 0, 0.05);
  }
 
- [data-cognigy-webchat-root] .numInputWrapper:hover span {
+ [data-webchat-root] .numInputWrapper:hover span {
      opacity: 1;
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month {
+ [data-webchat-root] .flatpickr-current-month {
      font-size: 135%;
      line-height: inherit;
      font-weight: 300;
@@ -355,7 +355,7 @@
      transform: translate3d(0px, 0px, 0px);
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month span.cur-month {
+ [data-webchat-root] .flatpickr-current-month span.cur-month {
      font-family: inherit;
      font-weight: 700;
      color: inherit;
@@ -364,25 +364,25 @@
      padding: 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month span.cur-month:hover {
+ [data-webchat-root] .flatpickr-current-month span.cur-month:hover {
      background: rgba(0, 0, 0, 0.05);
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month .numInputWrapper {
+ [data-webchat-root] .flatpickr-current-month .numInputWrapper {
      width: 6ch;
      width: 7ch\0;
      display: inline-block;
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month .numInputWrapper span.arrowUp:after {
+ [data-webchat-root] .flatpickr-current-month .numInputWrapper span.arrowUp:after {
      border-bottom-color: rgba(0, 0, 0, 0.9);
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month .numInputWrapper span.arrowDown:after {
+ [data-webchat-root] .flatpickr-current-month .numInputWrapper span.arrowDown:after {
      border-top-color: rgba(0, 0, 0, 0.9);
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month input.cur-year {
+ [data-webchat-root] .flatpickr-current-month input.cur-year {
      background: transparent;
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
@@ -404,18 +404,18 @@
      appearance: textfield;
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month input.cur-year:focus {
+ [data-webchat-root] .flatpickr-current-month input.cur-year:focus {
      outline: 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-current-month input.cur-year[disabled], [data-cognigy-webchat-root] .flatpickr-current-month input.cur-year[disabled]:hover {
+ [data-webchat-root] .flatpickr-current-month input.cur-year[disabled], [data-webchat-root] .flatpickr-current-month input.cur-year[disabled]:hover {
      font-size: 100%;
      color: rgba(0, 0, 0, 0.5);
      background: transparent;
      pointer-events: none;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekdays {
+ [data-webchat-root] .flatpickr-weekdays {
      background: transparent;
      text-align: center;
      overflow: hidden;
@@ -431,7 +431,7 @@
      height: 28px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekdays .flatpickr-weekdaycontainer {
+ [data-webchat-root] .flatpickr-weekdays .flatpickr-weekdaycontainer {
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
@@ -458,11 +458,11 @@
      font-weight: bolder;
  }
 
- [data-cognigy-webchat-root] .dayContainer, [data-cognigy-webchat-root] .flatpickr-weeks {
+ [data-webchat-root] .dayContainer, [data-webchat-root] .flatpickr-weeks {
      padding: 1px 0 0 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-days {
+ [data-webchat-root] .flatpickr-days {
      position: relative;
      overflow: hidden;
      width: 100%;
@@ -471,11 +471,11 @@
      text-align: center;
  }
 
- [data-cognigy-webchat-root] .flatpickr-days:focus {
+ [data-webchat-root] .flatpickr-days:focus {
      outline: 0;
  }
 
- [data-cognigy-webchat-root] .dayContainer {
+ [data-webchat-root] .dayContainer {
      padding: 0;
      outline: 0;
      text-align: left;
@@ -497,12 +497,12 @@
      opacity: 1;
  }
 
- [data-cognigy-webchat-root] .dayContainer+.dayContainer {
+ [data-webchat-root] .dayContainer+.dayContainer {
      -webkit-box-shadow: -1px 0 0 #e6e6e6;
      box-shadow: -1px 0 0 #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day {
+ [data-webchat-root] .flatpickr-day {
      background: none;
      border: 1px solid transparent;
      border-radius: 150px;
@@ -527,95 +527,95 @@
      text-align: center;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.inRange, [data-cognigy-webchat-root] .flatpickr-day.prevMonthDay.inRange, [data-cognigy-webchat-root] .flatpickr-day.nextMonthDay.inRange, [data-cognigy-webchat-root] .flatpickr-day.today.inRange, [data-cognigy-webchat-root] .flatpickr-day.prevMonthDay.today.inRange, [data-cognigy-webchat-root] .flatpickr-day.nextMonthDay.today.inRange, [data-cognigy-webchat-root] .flatpickr-day:hover, [data-cognigy-webchat-root] .flatpickr-day.prevMonthDay:hover, [data-cognigy-webchat-root] .flatpickr-day.nextMonthDay:hover, [data-cognigy-webchat-root] .flatpickr-day:focus, [data-cognigy-webchat-root] .flatpickr-day.prevMonthDay:focus, [data-cognigy-webchat-root] .flatpickr-day.nextMonthDay:focus {
+ [data-webchat-root] .flatpickr-day.inRange, [data-webchat-root] .flatpickr-day.prevMonthDay.inRange, [data-webchat-root] .flatpickr-day.nextMonthDay.inRange, [data-webchat-root] .flatpickr-day.today.inRange, [data-webchat-root] .flatpickr-day.prevMonthDay.today.inRange, [data-webchat-root] .flatpickr-day.nextMonthDay.today.inRange, [data-webchat-root] .flatpickr-day:hover, [data-webchat-root] .flatpickr-day.prevMonthDay:hover, [data-webchat-root] .flatpickr-day.nextMonthDay:hover, [data-webchat-root] .flatpickr-day:focus, [data-webchat-root] .flatpickr-day.prevMonthDay:focus, [data-webchat-root] .flatpickr-day.nextMonthDay:focus {
      cursor: pointer;
      outline: 0;
      background: #e6e6e6;
      border-color: #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.today {
+ [data-webchat-root] .flatpickr-day.today {
      border-color: #959ea9;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.today:hover, [data-cognigy-webchat-root] .flatpickr-day.today:focus {
+ [data-webchat-root] .flatpickr-day.today:hover, [data-webchat-root] .flatpickr-day.today:focus {
      border-color: #959ea9;
      background: #959ea9;
      color: #fff;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.selected, [data-cognigy-webchat-root] .flatpickr-day.startRange, [data-cognigy-webchat-root] .flatpickr-day.endRange, [data-cognigy-webchat-root] .flatpickr-day.selected.inRange, [data-cognigy-webchat-root] .flatpickr-day.startRange.inRange, [data-cognigy-webchat-root] .flatpickr-day.endRange.inRange, [data-cognigy-webchat-root] .flatpickr-day.selected:focus, [data-cognigy-webchat-root] .flatpickr-day.startRange:focus, [data-cognigy-webchat-root] .flatpickr-day.endRange:focus, [data-cognigy-webchat-root] .flatpickr-day.selected:hover, [data-cognigy-webchat-root] .flatpickr-day.startRange:hover, [data-cognigy-webchat-root] .flatpickr-day.endRange:hover, [data-cognigy-webchat-root] .flatpickr-day.selected.prevMonthDay, [data-cognigy-webchat-root] .flatpickr-day.startRange.prevMonthDay, [data-cognigy-webchat-root] .flatpickr-day.endRange.prevMonthDay, [data-cognigy-webchat-root] .flatpickr-day.selected.nextMonthDay, [data-cognigy-webchat-root] .flatpickr-day.startRange.nextMonthDay, [data-cognigy-webchat-root] .flatpickr-day.endRange.nextMonthDay {
+ [data-webchat-root] .flatpickr-day.selected, [data-webchat-root] .flatpickr-day.startRange, [data-webchat-root] .flatpickr-day.endRange, [data-webchat-root] .flatpickr-day.selected.inRange, [data-webchat-root] .flatpickr-day.startRange.inRange, [data-webchat-root] .flatpickr-day.endRange.inRange, [data-webchat-root] .flatpickr-day.selected:focus, [data-webchat-root] .flatpickr-day.startRange:focus, [data-webchat-root] .flatpickr-day.endRange:focus, [data-webchat-root] .flatpickr-day.selected:hover, [data-webchat-root] .flatpickr-day.startRange:hover, [data-webchat-root] .flatpickr-day.endRange:hover, [data-webchat-root] .flatpickr-day.selected.prevMonthDay, [data-webchat-root] .flatpickr-day.startRange.prevMonthDay, [data-webchat-root] .flatpickr-day.endRange.prevMonthDay, [data-webchat-root] .flatpickr-day.selected.nextMonthDay, [data-webchat-root] .flatpickr-day.startRange.nextMonthDay, [data-webchat-root] .flatpickr-day.endRange.nextMonthDay {
      -webkit-box-shadow: none;
      box-shadow: none;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.selected.startRange, [data-cognigy-webchat-root] .flatpickr-day.startRange.startRange, [data-cognigy-webchat-root] .flatpickr-day.endRange.startRange {
+ [data-webchat-root] .flatpickr-day.selected.startRange, [data-webchat-root] .flatpickr-day.startRange.startRange, [data-webchat-root] .flatpickr-day.endRange.startRange {
      border-radius: 50px 0 0 50px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.selected.endRange, [data-cognigy-webchat-root] .flatpickr-day.startRange.endRange, [data-cognigy-webchat-root] .flatpickr-day.endRange.endRange {
+ [data-webchat-root] .flatpickr-day.selected.endRange, [data-webchat-root] .flatpickr-day.startRange.endRange, [data-webchat-root] .flatpickr-day.endRange.endRange {
      border-radius: 0 50px 50px 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.selected.startRange+.endRange:not(:nth-child(7n+1)), [data-cognigy-webchat-root] .flatpickr-day.startRange.startRange+.endRange:not(:nth-child(7n+1)), [data-cognigy-webchat-root] .flatpickr-day.endRange.startRange+.endRange:not(:nth-child(7n+1)) {
+ [data-webchat-root] .flatpickr-day.selected.startRange+.endRange:not(:nth-child(7n+1)), [data-webchat-root] .flatpickr-day.startRange.startRange+.endRange:not(:nth-child(7n+1)), [data-webchat-root] .flatpickr-day.endRange.startRange+.endRange:not(:nth-child(7n+1)) {
      -webkit-box-shadow: -10px 0 0 #569ff7;
      box-shadow: -10px 0 0 #569ff7;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.selected.startRange.endRange, [data-cognigy-webchat-root] .flatpickr-day.startRange.startRange.endRange, [data-cognigy-webchat-root] .flatpickr-day.endRange.startRange.endRange {
+ [data-webchat-root] .flatpickr-day.selected.startRange.endRange, [data-webchat-root] .flatpickr-day.startRange.startRange.endRange, [data-webchat-root] .flatpickr-day.endRange.startRange.endRange {
      border-radius: 50px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.inRange {
+ [data-webchat-root] .flatpickr-day.inRange {
      border-radius: 0;
      -webkit-box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
      box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.disabled, .flatpickr-disabled.flatpickr-day, [data-cognigy-webchat-root] .flatpickr-day.disabled:hover, [data-cognigy-webchat-root] .flatpickr-day.prevMonthDay, [data-cognigy-webchat-root] .flatpickr-day.nextMonthDay, [data-cognigy-webchat-root] .flatpickr-day.notAllowed, [data-cognigy-webchat-root] .flatpickr-day.notAllowed.prevMonthDay, [data-cognigy-webchat-root] .flatpickr-day.notAllowed.nextMonthDay {
+ [data-webchat-root] .flatpickr-day.disabled, .flatpickr-disabled.flatpickr-day, [data-webchat-root] .flatpickr-day.disabled:hover, [data-webchat-root] .flatpickr-day.prevMonthDay, [data-webchat-root] .flatpickr-day.nextMonthDay, [data-webchat-root] .flatpickr-day.notAllowed, [data-webchat-root] .flatpickr-day.notAllowed.prevMonthDay, [data-webchat-root] .flatpickr-day.notAllowed.nextMonthDay {
      color: rgba(57, 57, 57, 0.3);
      background: transparent;
      border-color: transparent;
      cursor: default;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.disabled, [data-cognigy-webchat-root] .flatpickr-day.disabled:hover {
+ [data-webchat-root] .flatpickr-day.disabled, [data-webchat-root] .flatpickr-day.disabled:hover {
      cursor: not-allowed;
      color: rgba(57, 57, 57, 0.1);
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.week.selected {
+ [data-webchat-root] .flatpickr-day.week.selected {
      border-radius: 0;
      -webkit-box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
      box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
  }
 
- [data-cognigy-webchat-root] .flatpickr-day.hidden {
+ [data-webchat-root] .flatpickr-day.hidden {
      visibility: hidden;
  }
 
- [data-cognigy-webchat-root] .rangeMode .flatpickr-day {
+ [data-webchat-root] .rangeMode .flatpickr-day {
      margin-top: 1px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekwrapper {
+ [data-webchat-root] .flatpickr-weekwrapper {
      display: inline-block;
      float: left;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekwrapper .flatpickr-weeks {
+ [data-webchat-root] .flatpickr-weekwrapper .flatpickr-weeks {
      padding: 0 12px;
      -webkit-box-shadow: 1px 0 0 #e6e6e6;
      box-shadow: 1px 0 0 #e6e6e6;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekwrapper .flatpickr-weekday {
+ [data-webchat-root] .flatpickr-weekwrapper .flatpickr-weekday {
      float: none;
      width: 100%;
      line-height: 28px;
  }
 
- [data-cognigy-webchat-root] .flatpickr-weekwrapper span.flatpickr-day, [data-cognigy-webchat-root] .flatpickr-weekwrapper span.flatpickr-day:hover {
+ [data-webchat-root] .flatpickr-weekwrapper span.flatpickr-day, [data-webchat-root] .flatpickr-weekwrapper span.flatpickr-day:hover {
      display: block;
      width: 14%;
      flex-basis: 14%;
@@ -626,7 +626,7 @@
      border: none;
  }
 
- [data-cognigy-webchat-root] .flatpickr-innerContainer {
+ [data-webchat-root] .flatpickr-innerContainer {
      /* display: block;
      display: -webkit-box;
      display: -webkit-flex;
@@ -637,13 +637,13 @@
      overflow: hidden; */
  }
 
- [data-cognigy-webchat-root] .flatpickr-rContainer {
+ [data-webchat-root] .flatpickr-rContainer {
      display: flex;
      flex-direction: column;
      flex-grow: 1;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time {
+ [data-webchat-root] .flatpickr-time {
      text-align: center;
      outline: 0;
      display: block;
@@ -659,13 +659,13 @@
      display: flex;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time:after {
+ [data-webchat-root] .flatpickr-time:after {
      content: "";
      display: table;
      clear: both;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time .numInputWrapper {
+ [data-webchat-root] .flatpickr-time .numInputWrapper {
      -webkit-box-flex: 1;
      -webkit-flex: 1;
      -ms-flex: 1;
@@ -675,23 +675,23 @@
      float: left;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time .numInputWrapper span.arrowUp:after {
+ [data-webchat-root] .flatpickr-time .numInputWrapper span.arrowUp:after {
      border-bottom-color: #393939;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time .numInputWrapper span.arrowDown:after {
+ [data-webchat-root] .flatpickr-time .numInputWrapper span.arrowDown:after {
      border-top-color: #393939;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time.hasSeconds .numInputWrapper {
+ [data-webchat-root] .flatpickr-time.hasSeconds .numInputWrapper {
      width: 26%;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time.time24hr .numInputWrapper {
+ [data-webchat-root] .flatpickr-time.time24hr .numInputWrapper {
      width: 49%;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time input {
+ [data-webchat-root] .flatpickr-time input {
      background: transparent;
      -webkit-box-shadow: none;
      box-shadow: none;
@@ -712,20 +712,20 @@
      appearance: textfield;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time input.flatpickr-hour {
+ [data-webchat-root] .flatpickr-time input.flatpickr-hour {
      font-weight: bold;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time input.flatpickr-minute, [data-cognigy-webchat-root] .flatpickr-time input.flatpickr-second {
+ [data-webchat-root] .flatpickr-time input.flatpickr-minute, [data-webchat-root] .flatpickr-time input.flatpickr-second {
      font-weight: 400;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time input:focus {
+ [data-webchat-root] .flatpickr-time input:focus {
      outline: 0;
      border: 0;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time .flatpickr-time-separator, [data-cognigy-webchat-root] .flatpickr-time .flatpickr-am-pm {
+ [data-webchat-root] .flatpickr-time .flatpickr-time-separator, [data-webchat-root] .flatpickr-time .flatpickr-am-pm {
      height: inherit;
      display: inline-block;
      float: left;
@@ -742,7 +742,7 @@
      align-self: center;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time .flatpickr-am-pm {
+ [data-webchat-root] .flatpickr-time .flatpickr-am-pm {
      outline: 0;
      width: 18%;
      cursor: pointer;
@@ -753,11 +753,11 @@
      align-items: center;
  }
 
- [data-cognigy-webchat-root] .flatpickr-time input:hover, [data-cognigy-webchat-root] .flatpickr-time .flatpickr-am-pm:hover, [data-cognigy-webchat-root] .flatpickr-time input:focus, [data-cognigy-webchat-root] .flatpickr-time .flatpickr-am-pm:focus {
+ [data-webchat-root] .flatpickr-time input:hover, [data-webchat-root] .flatpickr-time .flatpickr-am-pm:hover, [data-webchat-root] .flatpickr-time input:focus, [data-webchat-root] .flatpickr-time .flatpickr-am-pm:focus {
      background: #eee;
  }
 
- [data-cognigy-webchat-root] .flatpickr-input[readonly] {
+ [data-webchat-root] .flatpickr-input[readonly] {
      cursor: pointer;
  }
 

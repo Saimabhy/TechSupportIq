@@ -17,7 +17,7 @@ import { IWithMessageColor } from './interfaces/MessageColor.interface';
 import { IWithMessageDirection } from './interfaces/MessageDirection.interface';
 
 export interface IMessengerPreviewProps extends Omit<React.HTMLProps<HTMLDivElement>, 'color'>, IWithMessageColor, IWithMessageDirection {
-    /** input.data._cognigy._facebook */
+    /** input.data._TechSupportIq._facebook */
     message: IFBMMessage;
     onAction?: FBMActionEventHandler;
     config: IWebchatConfig;

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { styled } from '../../style';
-import CognigyLogo from '../../assets/cognigy_logo.svg';
+import TechSupportIqLogo from '../../assets/TechSupportIq_logo.svg';
 
 const Link = styled.a(({ theme }) => ({
     alignItems: "flex-end",
@@ -18,7 +18,7 @@ const Link = styled.a(({ theme }) => ({
 	"&:focus":{		
 		outline: "none",
 		color: theme.primaryWeakColor,
-		"#cognigyBrandingLogo": {
+		"#TechSupportIqBrandingLogo": {
 			"& path, & polygon": {
 				fill: theme.primaryWeakColor,
 			}			
@@ -26,7 +26,7 @@ const Link = styled.a(({ theme }) => ({
 	}
 }));
 
-const Logo = styled(CognigyLogo)(({ theme }) => ({
+const Logo = styled(TechSupportIqLogo)(({ theme }) => ({
     fill: theme.greyWeakColor,
     height: 11,
     width: 80,
@@ -34,12 +34,12 @@ const Logo = styled(CognigyLogo)(({ theme }) => ({
     opacity: .9
 }));
 
-const URL = `https://www.cognigy.com/?utm_campaign=CognigyWebchatEmbedded&utm_medium=webchat&utm_term=webchat&utm_content=webchat&utm_source=${window.location.hostname}`;
+const URL = `https://www.TechSupportIq.com/?utm_campaign=TechSupportIqWebchatEmbedded&utm_medium=webchat&utm_term=webchat&utm_content=webchat&utm_source=${window.location.hostname}`;
 
 const Branding = () => (
-    <Link href={URL} target="_blank" aria-label="Powered by Cognigy. Opens in new tab" id="cognigyBrandingLink">
+    <Link href={URL} target="_blank" aria-label="Powered by TechSupportIq. Opens in new tab" id="TechSupportIqBrandingLink">
         Powered by
-        <Logo aria-hidden="true" id="cognigyBrandingLogo" />
+        <Logo aria-hidden="true" id="TechSupportIqBrandingLogo" />
     </Link>
 );
 

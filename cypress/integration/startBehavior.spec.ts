@@ -10,7 +10,7 @@ describe('Start Behavior', () => {
                 }
             })
 
-            cy.get('[data-cognigy-webchat-toggle]').click()
+            cy.get('[data-TechSupportIq-webchat-toggle]').click()
             cy.contains('get started').should('be.visible');
     });
 
@@ -26,7 +26,7 @@ describe('Start Behavior', () => {
             })
 
         cy.receiveMessage('fake bot message')
-        cy.get('[data-cognigy-webchat-toggle]').click()
+        cy.get('[data-TechSupportIq-webchat-toggle]').click()
         cy.wait(100)
         cy.contains('get started').should('not.exist');
     });
@@ -42,7 +42,7 @@ describe('Start Behavior', () => {
                 }
             });
 
-        cy.get('[data-cognigy-webchat-toggle]').click()
+        cy.get('[data-TechSupportIq-webchat-toggle]').click()
         cy.contains('get started').should('not.exist');
     });
 
@@ -56,7 +56,7 @@ describe('Start Behavior', () => {
                     getStartedText: ' '
                 }
             })
-            .get('[data-cognigy-webchat-toggle]').click()
+            .get('[data-TechSupportIq-webchat-toggle]').click()
             .contains('get started').should('not.exist');
     });
 
@@ -75,7 +75,7 @@ describe('Start Behavior', () => {
         
         cy.wait(500)
         
-        cy.get('[data-cognigy-webchat-toggle]').click();
+        cy.get('[data-TechSupportIq-webchat-toggle]').click();
         cy.contains('get started').should('be.visible');
     })
 
@@ -140,6 +140,6 @@ describe('Start Behavior', () => {
             });
 
         cy.openWebchat();
-        cy.get('[data-cognigy-webchat-toggle]').should('not.exist');
+        cy.get('[data-TechSupportIq-webchat-toggle]').should('not.exist');
     })
 });

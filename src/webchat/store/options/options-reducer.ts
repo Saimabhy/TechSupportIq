@@ -1,5 +1,5 @@
 import { Reducer } from "redux";
-import { Options } from "@cognigy/socket-client/lib/interfaces/options";
+import { Options } from "@TechSupportIq/socket-client/lib/interfaces/options";
 
 export type OptionsState = Pick<Options, 'userId' | 'sessionId' | 'channel'>;
 

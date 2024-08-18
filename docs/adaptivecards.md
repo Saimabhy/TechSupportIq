@@ -1,7 +1,7 @@
 ## Preview Notice
 This feature is available as a preview and will undergo further changes until officially released.
 The visual appearance and our integration API may change until then.
-If you want to start using AdaptiveCards right away and don't want to use the preview, you can use our existing [AdaptiveCards Webchat Plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/adaptivecards).
+If you want to start using AdaptiveCards right away and don't want to use the preview, you can use our existing [AdaptiveCards Webchat Plugin](https://github.com/TechSupportIq/WebchatPlugins/tree/master/plugins/adaptivecards).
 
 # AdaptiveCards 
 The WebchatWidget now supports the usage of [AdaptiveCards](https://adaptivecards.io/) up to Schema Version `1.5` out-of-the-box.

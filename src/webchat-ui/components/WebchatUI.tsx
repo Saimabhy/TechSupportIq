@@ -95,7 +95,7 @@ interface WebchatUIState {
 }
 
 const stylisPlugins = [
-    isolate('[data-cognigy-webchat-root]')
+    isolate('[data-webchat-root]')
 ];
 
 /**
@@ -110,7 +110,7 @@ const stylisPlugins = [
 })();
 
 const styleCache = createCache({
-    key: 'cognigy-webchat',
+    key: 'TechSupportIq-webchat',
     stylisPlugins
 });
 
@@ -424,7 +424,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
         this.props.onSendMessage(
             undefined,
             {
-                _cognigy: {
+                _TechSupportIq: {
                     controlCommands: [
                         {
                             type: "setRating",
@@ -533,7 +533,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
                     {/* <Global styles={cssReset} /> */}
                     <>
                         <WebchatWrapper
-                            data-cognigy-webchat-root
+                            data-webchat-root
                             {...restProps}
                             className="webchat-root"
                             aria-labelledby="webchatHeaderTitle"
@@ -547,7 +547,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
                                         this.props.config.isConfigLoaded)
                                     && (
                                         <WebchatRoot
-                                            data-cognigy-webchat
+                                            data-TechSupportIq-webchat
                                             {...webchatRootProps}
                                             className="webchat"
                                             id="webchatWindow"
@@ -587,7 +587,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
                                         {isDisabled ?
                                             <div title={getDisabledMessage()} tabIndex={-1} aria-disabled>
                                                 <FABDisabled
-                                                    data-cognigy-webchat-toggle
+                                                    data-TechSupportIq-webchat-toggle
                                                     {...webchatToggleProps}
                                                     type='button'
                                                     className="webchat-toggle-button-disabled"
@@ -599,7 +599,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
                                                 </FABDisabled>
                                             </div>
                                             : <FAB
-                                                data-cognigy-webchat-toggle
+                                                data-TechSupportIq-webchat-toggle
                                                 onClick={onToggle}
                                                 {...webchatToggleProps}
                                                 type='button'
@@ -655,7 +655,7 @@ export class WebchatUI extends React.PureComponent<React.HTMLProps<HTMLDivElemen
                     onClose={this.props.onClose}
                     connected={config.active}
                     logoUrl={config.settings.headerLogoUrl}
-                    title={config.settings.title || 'Cognigy Webchat'}
+                    title={config.settings.title || 'TechSupportIq Webchat'}
                     ratingButtonRef={this.ratingButtonInHeaderRef}
                     closeButtonRef={this.closeButtonInHeaderRef}
                     chatToggleButtonRef={this.chatToggleButtonRef}

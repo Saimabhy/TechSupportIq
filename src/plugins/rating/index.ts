@@ -13,10 +13,10 @@ export const getRating = (message: IMessage): IRating | null => {
 
   if (
     source === "user" &&
-    data?._cognigy?.controlCommands?.[0]?.type === "setRating"
+    data?._TechSupportIq?.controlCommands?.[0]?.type === "setRating"
   ) {
     const { comment, rating } =
-      message?.data?._cognigy?.controlCommands?.[0]?.parameters;
+      message?.data?._TechSupportIq?.controlCommands?.[0]?.parameters;
 
     return { comment, rating };
   }

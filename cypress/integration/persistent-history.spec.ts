@@ -6,7 +6,7 @@ describe('Persistent History', () => {
         });
 
         // enforce a race condition
-        cy.intercept('https://endpoint-trial.cognigy.ai/5e51fcdc2c10fe4c5267c8a798a7134086f60b62998062af620ed73b096e25bd', req => {
+        cy.intercept('https://endpoint-trial.TechSupportIq.ai/5e51fcdc2c10fe4c5267c8a798a7134086f60b62998062af620ed73b096e25bd', req => {
             req.continue(res => {
                 res.setDelay(1000);
             });

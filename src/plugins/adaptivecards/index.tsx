@@ -9,12 +9,12 @@ import { updateAdaptiveCardCSSCheaply } from './styles';
 const isAdaptiveCard = (message: IMessage, config: IWebchatConfig) => {
 
     // configurations that should use adaptive cards plugin 
-    const _webchat = message.data?._cognigy?._webchat?.adaptiveCard;
-    const _defaultPreview = message.data?._cognigy?._defaultPreview?.adaptiveCard;
+    const _webchat = message.data?._TechSupportIq?._webchat?.adaptiveCard;
+    const _defaultPreview = message.data?._TechSupportIq?._defaultPreview?.adaptiveCard;
     const _plugin = message.data?._plugin?.type === "adaptivecards";
     const defaultPreviewEnabled = config.settings.enableDefaultPreview;
 
-    if (message.data?._cognigy?._defaultPreview?.message && defaultPreviewEnabled){
+    if (message.data?._TechSupportIq?._defaultPreview?.message && defaultPreviewEnabled){
         return false;
     }
 
@@ -34,8 +34,8 @@ const AdaptiveCards = (props) => {
 
     const getCardPayload = (message: IMessage) => {
 
-        const _webchat = message.data?._cognigy?._webchat?.adaptiveCard;
-        const _defaultPreview = message.data?._cognigy?._defaultPreview?.adaptiveCard;
+        const _webchat = message.data?._TechSupportIq?._webchat?.adaptiveCard;
+        const _defaultPreview = message.data?._TechSupportIq?._defaultPreview?.adaptiveCard;
         const _plugin = message.data?._plugin?.payload;
         const defaultPreviewEnabled = config.settings.enableDefaultPreview;
 

@@ -21,26 +21,26 @@ const preferFacebook = (conigyData, enableStrictMessengerSync) => {
 const getMessengerPayload = (message: IMessage, config: IWebchatConfig) => {
 
     // conditions to not use messenger plugin
-    if (!message.data?._cognigy?._webchat?.message &&
-        !message.data?._data?._cognigy?._webchat?.message &&
-        !message.data?._cognigy?._facebook?.message &&
-        !message.data?._cognigy?._defaultPreview &&
-        !message.data?._cognigy?._defaultPreview?.adaptiveCard) {
+    if (!message.data?._TechSupportIq?._webchat?.message &&
+        !message.data?._data?._TechSupportIq?._webchat?.message &&
+        !message.data?._TechSupportIq?._facebook?.message &&
+        !message.data?._TechSupportIq?._defaultPreview &&
+        !message.data?._TechSupportIq?._defaultPreview?.adaptiveCard) {
         return false;
     }
 
-    const cognigyData = (() => {
-        if (!config.settings.disableDefaultReplyCompatiblityMode && message.data?._data?._cognigy) {
-            return message.data?._data?._cognigy;
+    const TechSupportIqData = (() => {
+        if (!config.settings.disableDefaultReplyCompatiblityMode && message.data?._data?._TechSupportIq) {
+            return message.data?._data?._TechSupportIq;
         }
 
-        return message.data?._cognigy;
+        return message.data?._TechSupportIq;
     })();
 
-    if (!cognigyData)
+    if (!TechSupportIqData)
         return null;
 
-    const { _facebook, _webchat, _defaultPreview } = cognigyData;
+    const { _facebook, _webchat, _defaultPreview } = TechSupportIqData;
 
     if (config.settings.enableDefaultPreview) {
         if (_defaultPreview) {
@@ -59,7 +59,7 @@ const getMessengerPayload = (message: IMessage, config: IWebchatConfig) => {
     }
     
     if (config.settings.enableStrictMessengerSync){
-        return preferFacebook(cognigyData, config.settings.enableStrictMessengerSync);
+        return preferFacebook(TechSupportIqData, config.settings.enableStrictMessengerSync);
     }
 
     return _webchat || _facebook;

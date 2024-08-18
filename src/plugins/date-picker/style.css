@@ -1,11 +1,11 @@
  /* Flatpickr */
- [data-cognigy-webchat-root] .flatpickr-input{
+ [data-webchat-root] .flatpickr-input{
      display: none;
  }
 
 /* Date Picker */
 
-[data-cognigy-webchat-root] .datepicker {
+[data-webchat-root] .datepicker {
     display: flex;
     justify-content: center;
     flex-grow: inherit;
@@ -14,7 +14,7 @@
 
 /* Buttons */
 
-[data-cognigy-webchat-root] .controlButtons {
+[data-webchat-root] .controlButtons {
     display: flex;
     justify-content: space-around;
     background-color: white;

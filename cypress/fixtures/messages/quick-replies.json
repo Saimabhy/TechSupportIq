@@ -2,7 +2,7 @@
 	{
 		"text": null,
 		"data": {
-			"_cognigy": {
+			"_TechSupportIq": {
 				"_default": {
 					"_quickReplies": {
 						"type": "quick_replies",
@@ -50,7 +50,7 @@
 	{
 		"text": null,
 		"data": {
-			"_cognigy": {
+			"_TechSupportIq": {
 				"_default": {
 					"_quickReplies": {
 						"type": "quick_replies",
@@ -80,7 +80,7 @@
 							{ "content_type": "text", "title": "foobar003qr01", "payload": "some-payload" },
 							{
 								"content_type": "text",
-								"image_url": "http://cognigy.com/favicon.ico",
+								"image_url": "http://TechSupportIq.com/favicon.ico",
 								"image_alt_text": "alt text",
 								"payload": "",
 								"title": "foobar003qr02"

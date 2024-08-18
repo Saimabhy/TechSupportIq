@@ -72,7 +72,7 @@ describe('Engagement Message', () => {
                     engagementMessageDelay: 1
                 }
             })
-            .get('[data-cognigy-webchat-toggle]')
+            .get('[data-TechSupportIq-webchat-toggle]')
             .click()
             .click()
             .wait(500)
@@ -135,7 +135,7 @@ describe('Engagement Message', () => {
             .contains('engagement message text').should('be.visible');
 
         cy
-            .get('[data-cognigy-webchat-toggle]').click()
+            .get('[data-TechSupportIq-webchat-toggle]').click()
             .wait(100)
 
         cy
@@ -160,7 +160,7 @@ describe('Engagement Message', () => {
             .contains('engagement message text').should('be.visible');
 
         cy
-            .get('[data-cognigy-webchat-toggle]').click()
+            .get('[data-TechSupportIq-webchat-toggle]').click()
             .wait(100)
 
         cy

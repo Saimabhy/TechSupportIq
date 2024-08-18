@@ -3,7 +3,7 @@ import { StoreState } from "../store";
 import { SetOpenAction, SetPageVisibleAction, ToggleOpenAction } from "../ui/ui-reducer";
 import { SendMessageAction } from "../messages/message-middleware";
 import { setOptions } from "../options/options-reducer";
-import { SocketClient } from "@cognigy/socket-client";
+import { SocketClient } from "@TechSupportIq/socket-client";
 import { setConnecting, setReconnectionLimit } from "./connection-reducer";
 import { shouldReestablishConnection } from "../../helper/connection-watchdog";
 

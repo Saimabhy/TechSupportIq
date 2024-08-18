@@ -46,11 +46,11 @@ const defaultEndpointResponse = {
 }
 
 Cypress.Commands.add('initMockWebchat', (embeddingOptions = {}, endpointResponse = defaultEndpointResponse) => {
-    cy.intercept('GET', 'http://endpoint-mock.cognigy.ai/asdfqwer', endpointResponse);
+    cy.intercept('GET', 'http://endpoint-mock.TechSupportIq.ai/asdfqwer', endpointResponse);
 
     return cy.window().then(window => {
         // @ts-ignore
-        return window.initWebchat('http://endpoint-mock.cognigy.ai/asdfqwer', embeddingOptions).then(webchat => {
+        return window.initWebchat('http://endpoint-mock.TechSupportIq.ai/asdfqwer', embeddingOptions).then(webchat => {
            // @ts-ignore
             window.webchat = webchat;
 
@@ -59,7 +59,7 @@ Cypress.Commands.add('initMockWebchat', (embeddingOptions = {}, endpointResponse
     }).as('webchat');
 });
 
-Cypress.Commands.add('initWebchat', (embeddingOptions, endpointUrl = 'https://endpoint-trial.cognigy.ai/5e51fcdc2c10fe4c5267c8a798a7134086f60b62998062af620ed73b096e25bd') => {
+Cypress.Commands.add('initWebchat', (embeddingOptions, endpointUrl = 'https://endpoint-trial.TechSupportIq.ai/5e51fcdc2c10fe4c5267c8a798a7134086f60b62998062af620ed73b096e25bd') => {
     return cy.window().then(window => {
         // @ts-ignore
         return window.initWebchat(endpointUrl, embeddingOptions).then((webchat) => {

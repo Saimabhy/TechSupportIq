@@ -6,11 +6,11 @@ const getTextFromMessage = (message: IMessage) => {
     if (message.text) {
         return message.text;
         // Check if message is quick reply message
-    } else if (message?.data?._cognigy?._webchat?.message?.text) {
-        return message.data._cognigy._webchat.message.text;
+    } else if (message?.data?._TechSupportIq?._webchat?.message?.text) {
+        return message.data._TechSupportIq._webchat.message.text;
         // Check if message is button message
-    } else if (message?.data?._cognigy?._webchat?.message?.attachment?.type === "template" && message?.data?._cognigy?._webchat?.message?.attachment?.payload?.template_type === "button") {
-        return message.data._cognigy._webchat.message.attachment.payload.text;
+    } else if (message?.data?._TechSupportIq?._webchat?.message?.attachment?.type === "template" && message?.data?._TechSupportIq?._webchat?.message?.attachment?.payload?.template_type === "button") {
+        return message.data._TechSupportIq._webchat.message.attachment.payload.text;
     } else {
         return "";
     }
